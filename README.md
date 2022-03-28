@@ -1,2 +1,2 @@
 # PEACE
-'A meditation app for relax your mind'
+Project-'A meditation app for relax your mind'
