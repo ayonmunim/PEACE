@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Today</title>
+  </head>
+  <body>
+    <style>
+
+
+      .topnav {
+      overflow: hidden;
+      background-color: #ffffff;
+      left:50%;
+      top:10px;
+      border:10px;
+      border-color:#000000;
+      }
+
+      .topnav a {
+      margin-top: 10px;
+      float: left;
+      color: #000000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: 'Trebuchet MS', cursive;
+      position: sticky;
+      }
+
+
+      .button {
+        padding: 15px 100px;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', cursive;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #000000;
+        box-shadow: 0 5px #707070;
+      }
+
+      .button:hover {background-color: #707070}
+
+      .button:active {
+        background-color: #ffffff;
+        box-shadow: 0 5px #707070;
+        transform: translateY(4px);
+      }
+ 
+      .button1 {
+        padding: 20px 60px;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', cursive;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #000000;
+        box-shadow: 0 5px #FA2100;
+        border: #707070;
+        
+      }
+
+      .button1:hover {background-color: #FA2100}
+
+      .button1:active {
+        background-color: #ffffff;
+        box-shadow: 0 5px #FA2100;
+        transform: translateY(4px);
+      }
+
+      .button2 {
+        padding: 20px 60px;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', cursive;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #000000;
+        border: #707070;
+        box-shadow: 0 5px #270181;
+      }
+
+      .button2:hover {background-color: #270181}
+
+      .button2:active {
+        background-color: #ffffff;
+        box-shadow: 0 5px #270181;
+        transform: translateY(4px);
+      }
+
+
+      .button3 {
+        padding: 20px 60px;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', cursive;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #000000;
+        border: #707070;
+        box-shadow: 0 5px #FFFF00;
+
+        
+      }
+
+      .button3:hover {background-color: #FFFF00}
+
+      .button3:active {
+        background-color: #ffffff;
+        box-shadow: 0 5px #FFFF00;
+        transform: translateY(4px);
+      }
+
+
+      .button4 {
+        padding: 20px 60px;
+        font-size: 15px;
+        font-family: 'Trebuchet MS', cursive;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #000000;
+        border: #707070;
+        box-shadow: 0 5px #3DC016;
+        
+      }
+
+      .button4:hover {background-color: #3DC016}
+
+      .button4:active {
+        background-color: #ffffff;
+        box-shadow: 0 5px #3DC016;
+        transform: translateY(4px);
+      }
+
+
+      .button5 {
+      margin-top: 10px;
+      margin-left: 10px;
+      padding: 15px 50px;
+      font-size: 15px;
+      font-family: 'Trebuchet MS', cursive;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #000000;
+      border: #707070;
+      border-radius: 50px;
+      
+      }
+
+      .button5:hover {background-color: blue}
+
+
+      .button6 {
+      margin-top: 10px;
+      
+      padding: 15px 50px;
+      font-size: 15px;
+      font-family: 'Trebuchet MS', cursive;
+      text-align: center;
+      cursor: pointer;
+      outline: #F4F0DB;
+      color: #000000;
+      border-radius: 10px;
+      background-color: #FFFFFF;
+      
+      }
+
+      .button6:hover {background-color:#F4F0DB}
+
+
+
+      .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      }
+
+      .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+      }
+
+      .icon-bar a:hover {
+      background-color: #000;
+      }
+
+      .facebook {
+      background: #3B5998;
+      color: white;
+      }
+
+      .twitter {
+      background: #55ACEE;
+      color: white;
+      }
+
+      .google {
+      background: #dd4b39;
+      color: white;
+      }
+
+      .linkedin {
+      background: #007bb5;
+      color: white;
+      }
+
+      .coloumn{
+        position: absolute;
+        left:100px;
+      }
+      .coloumn1{
+      position: absolute;
+      left:750px;
+      top: 135px;
+      }
+
+      .imgp{
+        position: absolute;
+        left: 220px;
+        top: 42px;
+      }
+      .imgp2{
+        position: absolute;
+        left: 200px;
+        top: 30px;
+      }
+      .imgan{
+        position: absolute;
+        right: -45px ;
+        top: 1000px;
+      }
+      .card:hover{
+      box-shadow: 5px 6px 6px 2px #e9ecef;
+      transform: scale(1.1)
+      }
+
+    </style>
+
+<div class="topnav position-sticky">
+  <a class="navbar-brand" href="0Home.html">
+          <img src="PEACE-logo-O.png" width="45" height="45" margin= "top-0" alt="logo">
+          <h2 class="d-inline-block align-top" style="font-family: 'comics sans MS', cursive; color: rgb(192,0,0);" ><b>PEACE</b></h2>
+          <p style="font-family: 'Maiandra GD', cursive; font-size: 12px;"><b>'A Relaxtation in your pocket'</b></p>
+  </a>  
+  <a href="Index.html" class="button">Today</a>
+  <a href="2Meditate.html" class="button1">Meditate</a>
+  <a href="3Sleep.html" class="button2">Sleep</a>
+  <a href="4Move.html" class="button3">Move</a>
+  <a href="5Focus.html" class="button4">Focus</a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#" class="button">Log in</a>
+  <a href="onboarding.html"><button class="button5">Try For Free</button></a>
+</div>
+
+
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+</div>
+
+<div class="col-sm-5 coloumn">
+<button class="button6">Favorites</button>
+<button class="button6">Recent</button>
+<br><br><br>
+<p style="font-family:'Tahoma', cursive ; font-size: ;"><b>Featured Collection</b></p>
+
+<a href="#" style="text-decoration: none;color: black;">
+<div class="card" style="width: 20rem; height: 10rem;">
+<div class="card-body" style="background-color: #F4F0DB;" >
+  <h6 class="card-title"><b>For Challenging Times</b></h6>
+  <p style="font-family:; font-size: 12px;text-overflow:block;">Emotional care for processing world tragedies and injustice</p>
+<!--     <img src="meditate-3.png" class="imgp" width="8" height="83"> -->
+</div>
+</div>
+</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p style="font-family:'Tahoma', cursive ;"><b>Your Afternoon</b></p>
+    <a href="#" style="text-decoration: none;color: black;">
+<div class="card" style="width: 18rem; height: 7rem;">
+  <div class="card-body" style="" >
+    <h6 class="card-title"><b>Task Of Relaxation</b></h6>
+    <p style="font-family:; font-size: 12px;text-overflow:block;"><img src="focus-icon.png" width="12" height="12">&nbsp;Today's Meditation<br><img src="clock-icon.png" width="12" height="12">&nbsp;3-20 min</p>
+    <img src="meditate-1.png" class="imgp" width="95" height="80">
+  </div>
+</div>
+  </a>
+</div>
+<div class="col-sm-5 coloumn1">
+  <p style="font-family:'Tahoma', cursive ; font-size: ;"><b>Start Your Day</b></p>
+  <a href="#" style="text-decoration: none;color: black;">
+<div class="card" style="width: 18rem; height: 7rem;">
+  <div class="card-body" style="" >
+    <h6 class="card-title"><b>1-Minute Breathing Exercise</b></h6>
+    <p style="font-family:; font-size: 12px;text-overflow:block;"><img src="focus-icon.png" width="12" height="12">&nbsp;Mindful Activity<br><img src="clock-icon.png" width="12" height="12">&nbsp;1 min</p>
+<!--     <img src="meditate-3.png" class="imgp" width="8" height="83"> -->
+  </div>
+</div>
+  </a>
+<br>
+
+    <a href="#" style="text-decoration: none;color: black;">
+<div class="card" style="width: 18rem; height: 7rem;">
+  <div class="card-body" style="" >
+    <h6 class="card-title"><b>Welcome to Peace</b></h6>
+    <p style="font-family:; font-size: 12px;text-overflow:block;"><img src="focus-icon.png" width="12" height="12">&nbsp;The Wake Up<br><img src="clock-icon.png" width="12" height="12">&nbsp;3-7 min</p>
+    <img src="meditate-2.png" class="imgp2" width="100" height="95">
+  </div>
+</div>
+  </a>
+<br>
+    <a href="#" style="text-decoration: none;color: black;">
+<div class="card" style="width: 18rem; height: 7rem;">
+  <div class="card-body" style="" >
+    <h6 class="card-title"><b>High Hopes</b></h6>
+    <p style="font-family:; font-size: 12px;text-overflow:block;"><img src="focus-icon.png" width="12" height="12">&nbsp;Today's Meditation<br><img src="clock-icon.png" width="12" height="12">&nbsp;3-20 min</p>
+    <img src="meditate-1.png" class="imgp" width="95" height="80">
+  </div>
+</div>
+  </a>
+<br>
+<br>
+<br>
+<br>
+  <p style="font-family:'Tahoma', cursive ; font-size: ;"><b>Your Night</b></p>
+    <a href="#" style="text-decoration: none;color: black;">
+<div class="card" style="width: 18rem; height: 7rem;">
+  <div class="card-body" style="" >
+    <h6 class="card-title"><b>Full Of Life</b></h6>
+    <p style="font-family:; font-size: 12px;text-overflow:block;"><img src="focus-icon.png" width="12" height="12">&nbsp;Today's Meditation<br><img src="clock-icon.png" width="12" height="12">&nbsp;3-20 min</p>
+    <img src="meditate-1.png" class="imgp" width="95" height="80">
+  </div>
+</div>
+  </a>
+
+  </div>
+
+
+
+
+</div>
+
+<div class="imgan" width="100" height="100">
+  <img src="group-3.png">
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
